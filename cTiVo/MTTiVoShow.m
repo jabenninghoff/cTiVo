@@ -1384,7 +1384,9 @@ NSString * fourChar(long n, BOOL allowZero) {
                            twoChar(monthNum, YES),
                            twoChar([components day], YES)];
     }
-    NSString * origDay, * origMonth, * origYear = @"";
+    NSString * origDay = @"";
+    NSString * origMonth = @"";
+    NSString * origYear = @"";
     NSUInteger origMonthNum = 0;
     if (originalAirDate.length == 10) {
       origYear =     [originalAirDate substringWithRange:NSMakeRange(0, 4)];
@@ -1423,14 +1425,14 @@ NSString * fourChar(long n, BOOL allowZero) {
                                 @"hour":			twoChar([components hour], YES),
                                 @"wday":			twoChar([components weekday], NO),
                                 @"mday":			twoChar([components day], NO),
-                                @"month":			monthName,
+                                @"month":			NULLT(monthName),
                                 @"monthnum":		twoChar(monthNum, NO),
                                 @"year": 			self.isMovie ? @"" : fourChar([components year], NO),
-                                @"originalairdate": originalAirDate,
-                                @"origday":     origDay,
-                                @"origmonthnum":   twoChar(origMonthNum, NO),
-                                @"origmonth":   origMonth,
-                                @"origyear":    origYear,
+                                @"originalairdate": NULLT(originalAirDate),
+                                @"origday":         NULLT(origDay),
+                                @"origmonthnum":    twoChar(origMonthNum, NO),
+                                @"origmonth":       NULLT(origMonth),
+                                @"origyear":        NULLT(origYear),
                                 @"episode":		    twoChar(self.episode, NO),
                                 @"extraepisode":    NULLT(extraEpisode),
                                 @"season":			twoChar(self.season, NO),
