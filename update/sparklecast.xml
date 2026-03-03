@@ -21,7 +21,7 @@
             </description>
             <pubDate>Tue., March 3, 2026 12:00:00 -0800</pubDate>
             <sparkle:minimumSystemVersion>10.15.0</sparkle:minimumSystemVersion>
-      <enclosure url="https://github.com/mackworth/cTiVo/releases/download/3.6.5/cTiVo.3.6.5.zip" sparkle:version="1254" sparkle:shortVersionString="3.6.5" length="137615950" type="application/octet-stream" sparkle:dsaSignature="MC4CFQC5sdHsUTN7Lq+tEBNUofcTX0iX5gIVALGddokyDnOOGi5sT6yEpbWFIeae"/>
+      <enclosure url="https://github.com/mackworth/cTiVo/releases/download/3.6.5/cTiVo-3.6.5.zip" sparkle:version="1254" sparkle:shortVersionString="3.6.5" length="137615950" type="application/octet-stream" sparkle:dsaSignature="MC4CFQC5sdHsUTN7Lq+tEBNUofcTX0iX5gIVALGddokyDnOOGi5sT6yEpbWFIeae"/>
         </item>
         <item>
             <title>Version 3.5.3; Final for MacOS 10.12-10.14</title>
